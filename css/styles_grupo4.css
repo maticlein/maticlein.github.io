@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+     
+}
+
+nav{
+    background: #b82525;
+}    
+.menu{
+    text-align: center;
+    margin: 0;
+}
+.menu li{
+    display: inline-block;  
+}
+
+.menu a{
+    padding: 45px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.menu a:hover{  
+        background: #e50505;
+}
+
+.fondo{
+
+    background: url(../assets/boleteria.jpg);  
+    padding: 400px;
+    text-align: center;
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.fondo:before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+.fondo h1, h3{
+    color: white;
+    position: relative;
+}   
+
+.dos_col{
+    width: 1024px;
+    margin: auto;
+}
+.dos_col .col_izquierda{
+    width: 600px; 
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.dos_col .col_derecha{  
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 250px;
+}
+
+.dos_col .col_derecha ul{
+    padding: 0;
+}
+.dos_col .col_derecha a{
+    color: grey;
+}
+
+.dos_col .col_derecha a:hover{
+    text-decoration: none;
+}
+.dos_col .col_derecha li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.tres_col{
+
+     
+    color: white;
+    width: 1024px;
+    margin: auto;
+}
+
+.tres_col a{
+    color: white;
+}
+
+.col{
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tres_col .col{
+
+    width: 330px;
+}
+
+.fondo_final{
+
+    background: black;
+    padding: 35px;
+    
+}
+
+.fondo_final li{
+    list-style: none  
+}
+
+.fondo_final ul{
+    padding: 0;
+}
+.footer{
+
+    background-color: #b82525;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+
+.icono{
+
+    width: 32px;
+    height: 32px;
+    background: red;
+    display: inline-block;
+    margin: 2%;
+}
+
+.instagram{
+    background: url(../assets/instagram.png);  
+}
+
+.facebook{
+    background: url(../assets/facebook.png);    
+}
+
+.whatsapp{
+    background: url(../assets/whatsapp.png);
+}
+
+.twitter{
+    background: url(../assets/twitter.png);
+}
+
+.titulo_inicio{
+
+    font-size: 80px;
+}
+.sub_titulo{
+
+    font-size: 30px;
+}
+

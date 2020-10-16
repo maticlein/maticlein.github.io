@@ -1,0 +1,36 @@
+body{
+    background-color: lightblue;
+    color: black;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+header > a > img{
+    width: 110px;
+    height: 100px;
+}
+
+header > h1{
+    margin: 35px 25px 50px 300px;
+}
+.Introducción > b > img{
+    width: 20px;
+    height: 84px;
+}
+
+.desarrollo{
+    background-color:lightblue;
+    color: black;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
