@@ -71,6 +71,7 @@ body {
 
 .content {
     background: linear-gradient(#091944,#094044);
+    height: auto;
 }
 
 .main {
