@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(44, 44, 44);
+    color: lightgray;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAOVBMVEUbGxscHBwjIyMdHR0WFhYaGhoZGRkhISEgICAeHh4XFxcYGBgVFRUUFBQfHx8TExMREREmJiYiIiK9t5leAAAD6ElEQVR4nO2YyYocQQwFpdyXWvv/P9bSVK9jDMbGpJy8S0MMpTgIuqcUtK6x0rr62tdWq5C/U6h1WZPndWWf1qXWIOSV4kW9CpGQPN7uw1OrPOXsI+dMcctbjE+qucRYcv1G8jhHnwsJbQ/6aXhSFVG99r+89h8uYqV037/umOv7xpVWHb72r8PTq4iImfWDrg9++/j805/SRKrUiysp3ZxP7FxKm8sXkXMxVZd7v7maonMkdOs9u+0ir1SEknOsw312FYUQWT7Y99C9fxCn0Lxv3ygxh0AclfqLvg/PqmJZ79fGYyq68Sfd9191/yR0U9qe+0/pvn+W/X8Nl7fhSVXyC8/LsTIdR+d0HE9qHI8jcjh25v1B7TiUgj6QuCutx/JGk6vkh0s2TrLeSrLCO8mOlZhk4xfxGxUlT1Ufz0Jfw/U5PLEqBF/km7yVGFIp8vUs9aJeSgt0EYVWShfaQqiFL4pK/qJ0DU+uev1r/PyX+rv0V8P/m4pKpibvtb35vLX2nbglJc6ltS371nNOHxQb5dJbzbW1PLmqy7ra0oiWJVFaFqWg1CkuS6SuFH5Fi1JTeg5PrqLbKb9q57lRPU8lp1TInydTfhCfp6ei5M6sVGnTx50Mv2h21bpHH3c5tdse5OYWon2Xl7B98X7Z0wfJe9m+k0/7Km93Ql4pKrW9KU2uQnVAdUB1GK9CdUB1QHVAdfiPVKgOqA6oDsNVqA6oDqgO41WoDqgOqA6jVagOqA6oDqNVqA6oDqgOBlQ273ubKqP3vU0VqgOqA6rDeBWqA6oDqsNoFaoDqgOqw2gVqgOqA6qDAZXN+96myuh9b1OF6oDqgOowXoXqgOqA6jBaheqA6oDqMFqF6oDqgOpgQGXzvrepMnrf21ShOqA6oDqMV6E6oDqgOoxWoTqgOqA6jFahOqA6oDoYUNm8722qjN73NlWoDqgOqA7jVagOqA6oDqNVqA6oDqgOo1WoDqgOqA4GVDbve5sqo/e9TRWqA6oDqsN4FaoDqgOqw2gVqgOqA6rDaBWqA6oDqoMBlc373qbK6H1vU4XqgOqA6jBeheqA6oDqMFqF6oDqgOowWoXqgOqA6mBAZfO+t6kyet/bVKE6oDqgOoxXoTqgOqA6jFahOqA6oDqMVqE6oDqgOhhQ2bzvbaqM3vc2VagOqA6oDuNVqA6oDqgOo1WoDqgOqA6jVagOqA6oDgZUNu97myqj971NFaoDqgOqw3gVqgOqA6rDaBWqA6oDqsNoFaoDqgOqgwGVzfvepsrofW9TheqA6vCvVPHzKJczPMqpvV1HuZzhMbq3o1wpXyRneJThrMNVh+Psqh9wFHp0G1WXtwAAAABJRU5ErkJggg==);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header > a > img {
+    width: 250px;
+    height: 100px;
+}
+
+header > h1 {
+    margin: 35px 25px 35px 25px;
+}
+
+.desarrollo {
+    
+    color:white;
+}
+
+.que_son {
+
+    margin-right: 50%;
+ 
+ }
+
+.codigo {
+
+   margin-right: 0px;
+   font-family: 'Courier New', Courier, monospace;
+
+}
+
+footer > a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

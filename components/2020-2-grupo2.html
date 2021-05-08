@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>>Botones De Emergencia</title>
+        <link rel = "stylesheet" href = "../css/2020-2-grupo2.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Botones De Emergencia</h1> 
+        </header>
+
+        <section class="content">
+            <div>
+                
+            </div>
+            <hr>
+            <div class="que_son">
+                <h2>¿Que son los botones de emergencia y que hacen?</h2>
+                    <p3>Como el nombre lo dice son unos botones que se precionan en caso de alguna emergencia. En cada botonera hay tres opciones o tres botones,
+                    uno para la policia, ambulancia y bomberos. Al ser precionado unas de las opciones, la botonera avisa a una central, que puede haber una 
+                    emergencia. Una vez recibida la señal el sistema accede al monitoreo de la zona, donde recibe todo tipo de informacion. Esta es procesada 
+                    por una I.A que primero determina, si es o no una verdadera emergencia. Al vez el I.A busca por ciertos obejetos y condiciones 
+                    para luego entregar esa informacion a las autoridades en cargo, el cual les ayudara para enfrentarce a las diversas situaciones.</p3>
+               
+                <h2>¿Que son algunas cosas que busca el I.A y Porque?</h2>
+                 <li>Personas: Quienes estan involucrados y/o que pueden correr peligro</li>            
+                 <li>Armas: Indentificar posibles amenazas</li>                 
+                 <li>Objectos Incendiarios: Establcer objetos de riesgos</li>       
+                 <li>Rutas de Escapes: Rutas en donde se pueden escapar la gente</li>       
+                 <li>Tempertura, Corrietes de Vientos y Diseño Estructural: Simular la propagacion del incendio</li>
+                    
+                 <h2>Funcionamiento</h2>
+
+                 <p3>Este programa es para solicitar ayuda, ya sea para llamar a la policía, bomberos o ambulancia, dependiendo del tipo de situación que se presente. A su vez estudia las situaciones que en este código son simuladas por dos matrices, la primera está predefinida y la segunda está hecha pseudo-azar. Cada botón (elección) tiene tres matrices, donde dos de ellas tienen el número de emergencia dentro de ella y la otra no (si la primera matriz por ejemplo tiene un {1,3,3} de forma horizontal o vertical se asume que hay emergencia). Esto se hizo así para aumentar la posibilidad que se cumpla la condición de que sea emergencia, de otra manera sería complicado que tuviéramos un caso al azar.</p3>
+
+                <h2> </h2>
+
+                 <p4>
+                     Algunas posiciones de las matrices tiene algún significado (cantidad de personas, armas, etc.). Después de eso se promedian estos valores y se le da aviso. Si el programa no encuentra una emergencia pasa hacia un moderador que analiza los datos crudos y determina si es o no emergencia de manera manual. Este proceso termina decidiendo si se da el aviso o no a las autoridades correspondientes. Después de dar el aviso, la información procesada, se guarda (se imprime por pantalla y se almacena en una base de datos) un reporte general, que cuenta con la información cruda y datos relevantes según la situación</p4>       
+
+
+                </div>
+            <hr>
+            <div class="desarrollo">
+                <h2>Video Explicativo</h2>
+                <p></p>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/Oy-BWwnWRkA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div class="codigo">
+                <h2>Ejemplo de un proceso:</h2>
+                <p>-------------------------------------</p>
+                <p>-------------P.O.V-ACTIVADOR---------</p>
+                <p>-------------------------------------</p>
+
+
+                <p>------Tipo de Emergencia--------</p>     
+
+
+                <p>POLICIA---------> 1</p>
+
+                <p>BOMBERO---------> 2</p>
+
+                <p>AMBULANCIA------> 3</p>
+
+                <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>    
+                <p>INGRESAR  UNA OPCION: (numero)</p>       
+                <p>1</p>
+                <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                <p>Opcion eligida: POLICIA</p>
+                <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+
+
+                <p>Ingresar su RUT(sin puntos,espacios ni gion)</p>
+
+                <p>208079662</p>
+
+                <p>Su rut es: 208079662</p>
+                <p>Se ha encontrado una EMERGENCIA</p>
+                <p>Se le da aviso a la autoridad respectiva</p>
+                <p>-------------------------------------</p>   
+                <p>---------P.O.V--AUTORIDADES----------</p>   
+                <p>-------------------------------------</p>
+
+                <p>Fecha: Sabado, 9 de enero 2021</p>
+                <p>Hora: 9:24</p>
+                <p>Ubicacion del incidente: Avenida Alemania (Sector B-46),Temuco,IX Region.</p>
+                <p>Opcion eligida: POLICIA</p>
+                <p>El RUT del activador es: 208079662</p>
+                <p>------Informacion-Procesada---------</p>
+
+                <p>Cantidad de personas en la zona: 9</p>
+                <p>Cantidad de armas: 5</p>
+                <p>Cantidad de objetos incindiarios: 0</p>
+                <p>Cantidad de vehiculos: 1</p>
+                <p>Cantidad de rutas de posibles escapes: 4</p>
+                <p>La gravedad de la situacion del 0 al 9 es: 3</p>
+                <p>La predicion de propagacion del incendio segun el IA es: NO SE PROPAGA</p>
+                <p>-------------------------------------</p>
+                <p>--------P.O.V--Base-de-Datos---------</p>
+                <p>-------------------------------------</p>
+
+                <p>~~~~~~~~~~~~~~~~REPORTE~GENERAL~~~~~~~~~~~~~~~</p>
+
+                <p>Fecha: Sabado, 9 de enero 2021</p>
+                <p>Hora: 9:24</p>
+                <p>Ubicacion del incidente: Avenida Alemania (Sector B-46),Temuco,IX Region.</p>
+                <p>Fue declarado EMERGENCIA, por IA</p>
+                <p>Estado de emergencia, no fue modificada</p>
+                <p>Opcion eligida: POLICIA</p>
+                <p>El RUT del activador es: 208079662</p>
+                <p>--------Informacion-Cruda---------</p>
+
+                <p>------------</p>
+                <p>Matriz 1:</p>
+                <p>9 1 7 8 3</p>
+                <p>2 5 9 6 4</p>
+                <p>2 6 1 5 6</p>
+                <p>1 1 3 2 8</p>
+                <p>5 2 3 2 4</p>
+                <p>------------</p>
+                <p>Matriz 2:</p>
+                <p>9 6 1 2 7</p>
+                <p>6 2 5 4 4</p>
+                <p>3 3 5 9 9</p>
+                <p>6 3 7 4 5</p>
+                <p>3 3 6 3 4</p>
+                <p>------------</p>
+                <p>------Informacion-Procesada---------</p>
+
+                <p>Cantidad de personas en la zona: 9</p>
+                <p>Cantidad de armas: 5</p>
+                <p>Cantidad de objetos incindiarios: 0</p>
+                <p>Cantidad de vehiculos: 1</p>
+                <p>Cantidad de rutas de posibles escapes: 4</p>
+                <p>La gravedad de la situacion del 0 al 9 es: 3</p>
+                <p>La predicion de propagacion del incendio segun el IA es: NO SE PROPAGA</p>
+
+                <p>Guardando datos del caso en la base de datos</p>
+
+                <p>----------Fin de programa------</p>
+            </div>
+            <hr>
+        </section>
+
+        <footer>
+            <h3>Creadores:</h3>
+            <li>José A. Mena Olave. (j.mena03@ufromail.cl)</li>
+            <li>Andrés I. Carrasco Inostroza. (a.carrasco12@ufromail.cl)</li>
+            <li>Cristopher A. Almonacid Castillo. (c.almonacid03@ufromail.cl)</li>
+            <li>Roberto C. Quintana Canio. (r.quintana06@ufromail.cl)</li>
+            
+
+
+
+            
+            
+
+        </footer>
+    </body>
+</html> 
