@@ -7,3 +7,4 @@ Web para presentar los Proyectos de Programación del módulo 5 de la asignatura
 05/08/2020 -> Agrega título de página y fecha última actualización.<br/>
 16/10/2020 -> Agrega nuevo diseño de home y Tareas 1er Semestre 2020.<br/>
 08/05/2021 -> Agrega Tareas 2o Semestre 2020, Copyright y actualiza README.md<br/>
+10/05/2021 -> Responsive Design<br/>

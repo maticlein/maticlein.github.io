@@ -4,69 +4,17 @@ body {
 }
 
 .header {
-    align-items: center;
     background-color: #091944;
     color: white;
     display: flex;
-    height: 100px;
-    justify-content: space-between;
-    top: 0px;
-    width: 100%;
+    justify-content: center;
+    padding: 20px;
 }
 
 .header__img {
-    margin-left: 30px;
-    margin-top: 60px;
+    margin: 0px;
     width: 120px;
     height: 80px;
-}
-
-.header__menu {
-    margin-right: 30px;
-}
-
-.header__menu ul {
-    display: none;
-    list-style: none;
-    padding: 0px;
-    position: absolute;
-    width: 100 px;
-    text-align: right;
-    margin: 0px 0px 0px -14px;
-}
-
-.header__menu:hover ul, ul:hover {
-    display: block;
-}
-
-.header__menu li {
-    margin: 10px 0px;
-}
-
-.header__menu li a {
-    color: white;
-    text-decoration: none;
-}
-
-.header__menu li a:hover {
-    text-decoration: underline;
-}
-
-.header__menu--profile {
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
-}
-
-.header__menu--profile img {
-    margin-right: 8px;
-    width: 40px;
-    height: 40px;
-}
-
-.header__menu--profile p {
-    margin: 0px;
-    color: white;
 }
 
 .content {
@@ -81,6 +29,8 @@ body {
     flex-direction: column;
     height: 230px;
     border-radius: 0px 0px 40px 40xp;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .main__title {
@@ -107,19 +57,20 @@ body {
     font-size: 20px;
     position: absolute;
     padding-left: 30px;
-    width: 100%;
 }
 
 .carousel {
-    width: 100%;
-    overflow: scroll;
+    overflow-x: scroll;
     padding: 30px 30px 0px 30px;
     position: relative;
+    overscroll-behavior-x: contain; 
+    scroll-snap-type: x proximity;
 }
 
 .carousel__container {
     white-space: nowrap;
-    margin: 70px 0px;
+    margin: 30px 0px 50px 0px;
+    /* margin: 70px 0px; */
     padding-bottom: 10px;
 }
 
@@ -138,7 +89,7 @@ body {
 }
 
 .carousel-item:hover ~ .carousel-item {
-    transform: translate3d(100px, 0, 0);
+    transform: translate3d(80px, 0, 0);
 }
 
 .carousel__container:hover ~ .carousel-item {
@@ -146,7 +97,7 @@ body {
 }
 
 .carousel__container:hover .carousel-item:hover {
-    transform: scale(1.5);
+    transform: scale(1.4);
     opacity: 1;
 }
 
@@ -203,6 +154,8 @@ body {
     align-items: left;
     flex-direction: column;
     width: 100%;
+    padding-top: 20px;
+    height: 50%;
 }
 
 .footer > p {
@@ -274,7 +227,7 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 0px 30px;
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 204px);
     color: white;
 }
 
